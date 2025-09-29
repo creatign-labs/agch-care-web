@@ -7,100 +7,74 @@ import hospitalExterior from "@/assets/hospital-exterior.jpg";
 import medicalTeam from "@/assets/medical-team.jpg";
 import operatingTheater from "@/assets/operating-theater.jpg";
 import patientConsultation from "@/assets/patient-consultation.jpg";
-
 const Index = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
-
-  const specialties = [
-    {
-      title: "Cancer Care",
-      description: "Comprehensive oncology services with advanced treatment options",
-      icon: "🎗️",
-      featured: true,
-      link: "/specialties/oncology"
-    },
-    {
-      title: "Cardiology",
-      description: "Expert heart care with state-of-the-art cardiac procedures",
-      icon: "❤️",
-      link: "/specialties"
-    },
-    {
-      title: "Orthopaedics",
-      description: "Complete bone and joint care including joint replacement",
-      icon: "🦴",
-      link: "/specialties"
-    },
-    {
-      title: "Neurology & Neurosurgery",
-      description: "Advanced brain and spine treatments",
-      icon: "🧠",
-      link: "/specialties"
-    }
-  ];
-
-  const whyChooseUs = [
-    {
-      title: "Advanced Technology",
-      description: "Latest medical equipment and cutting-edge treatment methods",
-      icon: <Shield className="w-8 h-8 text-teal-500" />
-    },
-    {
-      title: "Expert Doctors",
-      description: "Highly qualified specialists with years of experience",
-      icon: <Users className="w-8 h-8 text-teal-500" />
-    },
-    {
-      title: "Patient-First Approach",
-      description: "Compassionate care focused on your comfort and healing",
-      icon: <Heart className="w-8 h-8 text-teal-500" />
-    },
-    {
-      title: "24/7 Emergency Care",
-      description: "Round-the-clock emergency services for critical situations",
-      icon: <Clock className="w-8 h-8 text-teal-500" />
-    }
-  ];
-
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      condition: "Cancer Treatment",
-      quote: "The oncology team at AGCH provided exceptional care throughout my treatment. Their compassionate approach made all the difference.",
-      rating: 5
-    },
-    {
-      name: "Michael Chen",
-      condition: "Heart Surgery",
-      quote: "The cardiac surgery team saved my life. Their expertise and the hospital's advanced facilities are truly world-class.",
-      rating: 5
-    },
-    {
-      name: "Dr. Priya Sharma",
-      condition: "Family Care",
-      quote: "As a referring physician, I trust AGCH for my patients. They consistently deliver excellent outcomes with compassionate care.",
-      rating: 5
-    }
-  ];
-
+  const specialties = [{
+    title: "Cancer Care",
+    description: "Comprehensive oncology services with advanced treatment options",
+    icon: "🎗️",
+    featured: true,
+    link: "/specialties/oncology"
+  }, {
+    title: "Cardiology",
+    description: "Expert heart care with state-of-the-art cardiac procedures",
+    icon: "❤️",
+    link: "/specialties"
+  }, {
+    title: "Orthopaedics",
+    description: "Complete bone and joint care including joint replacement",
+    icon: "🦴",
+    link: "/specialties"
+  }, {
+    title: "Neurology & Neurosurgery",
+    description: "Advanced brain and spine treatments",
+    icon: "🧠",
+    link: "/specialties"
+  }];
+  const whyChooseUs = [{
+    title: "Advanced Technology",
+    description: "Latest medical equipment and cutting-edge treatment methods",
+    icon: <Shield className="w-8 h-8 text-teal-500" />
+  }, {
+    title: "Expert Doctors",
+    description: "Highly qualified specialists with years of experience",
+    icon: <Users className="w-8 h-8 text-teal-500" />
+  }, {
+    title: "Patient-First Approach",
+    description: "Compassionate care focused on your comfort and healing",
+    icon: <Heart className="w-8 h-8 text-teal-500" />
+  }, {
+    title: "24/7 Emergency Care",
+    description: "Round-the-clock emergency services for critical situations",
+    icon: <Clock className="w-8 h-8 text-teal-500" />
+  }];
+  const testimonials = [{
+    name: "Sarah Johnson",
+    condition: "Cancer Treatment",
+    quote: "The oncology team at AGCH provided exceptional care throughout my treatment. Their compassionate approach made all the difference.",
+    rating: 5
+  }, {
+    name: "Michael Chen",
+    condition: "Heart Surgery",
+    quote: "The cardiac surgery team saved my life. Their expertise and the hospital's advanced facilities are truly world-class.",
+    rating: 5
+  }, {
+    name: "Dr. Priya Sharma",
+    condition: "Family Care",
+    quote: "As a referring physician, I trust AGCH for my patients. They consistently deliver excellent outcomes with compassionate care.",
+    rating: 5
+  }];
   const nextTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+    setCurrentTestimonial(prev => (prev + 1) % testimonials.length);
   };
-
   const prevTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setCurrentTestimonial(prev => (prev - 1 + testimonials.length) % testimonials.length);
   };
-
-  return (
-    <div className="w-full">
+  return <div className="w-full">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-section overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src={hospitalExterior} 
-            alt="Modern hospital exterior" 
-            className="w-full h-full object-cover opacity-20"
-          />
+          <img src={hospitalExterior} alt="Modern hospital exterior" className="w-full h-full object-cover opacity-20" />
           <div className="absolute inset-0 bg-gradient-hero opacity-60"></div>
         </div>
         
@@ -132,19 +106,11 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">Centres of Excellence</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto whitespace-nowrap">
-              Specialized care across multiple medical disciplines with world-class expertise
-            </p>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto whitespace-nowrap">Specialized care across multiple medical disciplines with world-class expertise.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-            {specialties.map((specialty, index) => (
-              <Card 
-                key={index} 
-                className={`group hover:shadow-card transition-all duration-300 hover:-translate-y-2 ${
-                  specialty.featured ? 'md:col-span-2 lg:col-span-2 bg-gradient-card' : ''
-                }`}
-              >
+            {specialties.map((specialty, index) => <Card key={index} className={`group hover:shadow-card transition-all duration-300 hover:-translate-y-2 ${specialty.featured ? 'md:col-span-2 lg:col-span-2 bg-gradient-card' : ''}`}>
                 <CardContent className="p-6 text-center">
                   <div className="text-4xl mb-4">{specialty.icon}</div>
                   <h3 className="text-xl font-semibold mb-3 text-primary">{specialty.title}</h3>
@@ -156,8 +122,7 @@ const Index = () => {
                     </Link>
                   </Button>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
 
           <div className="text-center">
@@ -179,15 +144,13 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {whyChooseUs.map((feature, index) => (
-              <Card key={index} className="text-center group hover:shadow-card transition-all duration-300 hover:-translate-y-2">
+            {whyChooseUs.map((feature, index) => <Card key={index} className="text-center group hover:shadow-card transition-all duration-300 hover:-translate-y-2">
                 <CardContent className="p-8">
                   <div className="mb-4 flex justify-center">{feature.icon}</div>
                   <h3 className="text-xl font-semibold mb-3 text-primary">{feature.title}</h3>
                   <p className="text-muted-foreground">{feature.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -206,9 +169,7 @@ const Index = () => {
             <Card className="p-8 shadow-card">
               <CardContent className="text-center">
                 <div className="flex justify-center mb-4">
-                  {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-accent text-accent" />
-                  ))}
+                  {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => <Star key={i} className="w-5 h-5 fill-accent text-accent" />)}
                 </div>
                 <blockquote className="text-xl md:text-2xl italic mb-6 text-muted-foreground">
                   "{testimonials[currentTestimonial].quote}"
@@ -225,15 +186,7 @@ const Index = () => {
                 <ChevronLeft className="w-4 h-4" />
               </Button>
               <div className="flex space-x-2">
-                {testimonials.map((_, index) => (
-                  <button
-                    key={index}
-                    className={`w-3 h-3 rounded-full transition-colors ${
-                      index === currentTestimonial ? 'bg-primary' : 'bg-muted'
-                    }`}
-                    onClick={() => setCurrentTestimonial(index)}
-                  />
-                ))}
+                {testimonials.map((_, index) => <button key={index} className={`w-3 h-3 rounded-full transition-colors ${index === currentTestimonial ? 'bg-primary' : 'bg-muted'}`} onClick={() => setCurrentTestimonial(index)} />)}
               </div>
               <Button variant="outline" size="icon" onClick={nextTestimonial}>
                 <ChevronRight className="w-4 h-4" />
@@ -260,8 +213,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
