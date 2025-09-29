@@ -110,8 +110,8 @@ const Index = () => {
             <span className="text-accent">Within Your Reach</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
-            Your trusted multi-specialty hospital, offering advanced cancer care<br />
-            and a complete range of medical services for your family's well-being.
+            Your trusted multi-specialty hospital, offering advanced cancer care and 
+            a complete range of medical services for your family's well-being.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button asChild variant="hero" size="lg" className="text-lg px-8 py-6">
