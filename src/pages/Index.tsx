@@ -207,9 +207,6 @@ const Index = () => {
             <Button variant="cta" size="lg" className="text-lg px-8 py-6">
               Book an Appointment
             </Button>
-            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 border-white text-white hover:bg-white hover:text-primary">
-              <Link to="/contact">Contact Us</Link>
-            </Button>
           </div>
         </div>
       </section>
