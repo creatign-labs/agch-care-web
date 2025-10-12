@@ -256,7 +256,7 @@ const Contact = () => {
             <Button variant="cta" size="lg" className="text-lg px-8 py-6">
               Emergency: 1800-123-AGCH
             </Button>
-            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 border-white text-white hover:bg-white hover:text-primary">
+            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 border-white bg-transparent text-primary-foreground hover:bg-white hover:text-primary">
               <a href="tel:+918012342424">Call Now</a>
             </Button>
           </div>
