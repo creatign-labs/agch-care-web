@@ -126,7 +126,7 @@ const Specialties = () => {
             <Button variant="cta" size="lg" className="text-lg px-8 py-6">
               Book Appointment
             </Button>
-            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 border-white text-white hover:bg-white hover:text-primary">
+            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 border-white bg-transparent text-primary-foreground hover:bg-white hover:text-primary">
               <Link to="/doctors">Find a Doctor</Link>
             </Button>
           </div>
