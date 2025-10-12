@@ -1,11 +1,9 @@
-import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, Clock } from "lucide-react";
+import { Phone } from "lucide-react";
 import agchLogo from "@/assets/agch-logo.jpg";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
   const navItems = [
@@ -45,13 +43,13 @@ const Header = () => {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          {/* Navigation */}
+          <nav className="flex items-center space-x-4 lg:space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+                className={`text-xs lg:text-sm font-medium transition-colors hover:text-primary ${
                   isActive(item.path) ? "text-primary" : "text-muted-foreground"
                 }`}
               >
@@ -61,51 +59,12 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <div className="text-right text-sm">
-              <div className="flex items-center text-primary font-medium">
-                <Clock className="w-4 h-4 mr-1" />
-                24/7 Available
-              </div>
-              <div className="text-muted-foreground">Book your appointment</div>
-            </div>
-            <Button variant="cta" size="lg">
-              Book Appointment
-            </Button>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2"
-          >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          <Button variant="cta" size="lg" className="shrink-0">
+            Book Appointment
+          </Button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="lg:hidden border-t border-border bg-background">
-          <nav className="container mx-auto px-4 py-4 space-y-4">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`block py-2 text-base font-medium transition-colors ${
-                  isActive(item.path) ? "text-primary" : "text-muted-foreground"
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.name}
-              </Link>
-            ))}
-            <Button variant="cta" className="w-full mt-4">
-              Book Appointment
-            </Button>
-          </nav>
-        </div>
-      )}
     </header>
   );
 };
