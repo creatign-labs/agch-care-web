@@ -79,14 +79,11 @@ const Index = () => {
         </div>
         
         <div className="container mx-auto px-4 relative z-10 text-center animate-fade-in-up">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
-            World-Class Healthcare,<br />
+          <h1 className="text-5xl font-bold mb-6 text-white md:text-6xl text-center">India's Premier Cancer Care:
+Advanced, Accessible, All for You.<br />
             <span className="text-accent">Within Your Reach</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
-            Your trusted multi-specialty hospital, offering advanced cancer care and 
-            a complete range of medical services for your family's well-being.
-          </p>
+          <p className="text-xl mb-8 text-white/90 max-w-3xl mx-auto text-center md:text-base font-light">Your trusted multi-specialty partner for healing. We deliver world-class, blending advance treatment with compassionate care-making premier healthcare truly within your reach.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button asChild variant="hero" size="lg" className="text-lg px-8 py-6">
               <Link to="/doctors">
