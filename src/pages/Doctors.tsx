@@ -30,7 +30,6 @@ const Doctors = () => {
       expertise: ["Breast Cancer", "Lung Cancer", "Immunotherapy"],
       availableDays: "Mon, Wed, Fri",
       languages: ["English", "Hindi", "Gujarati"],
-      consultationFee: "₹1500",
       rating: 4.9
     },
     {
@@ -42,7 +41,6 @@ const Doctors = () => {
       expertise: ["Heart Surgery", "Valve Replacement", "Bypass Surgery"],
       availableDays: "Tue, Thu, Sat",
       languages: ["English", "Hindi"],
-      consultationFee: "₹2000",
       rating: 4.8
     },
     {
@@ -54,7 +52,6 @@ const Doctors = () => {
       expertise: ["Childhood Leukemia", "Brain Tumors", "Pediatric Care"],
       availableDays: "Mon, Wed, Fri",
       languages: ["English"],
-      consultationFee: "₹1800",
       rating: 4.9
     },
     {
@@ -66,7 +63,6 @@ const Doctors = () => {
       expertise: ["Joint Replacement", "Sports Medicine", "Trauma Surgery"],
       availableDays: "Mon, Tue, Thu",
       languages: ["English", "Hindi", "Punjabi"],
-      consultationFee: "₹1200",
       rating: 4.7
     },
     {
@@ -78,7 +74,6 @@ const Doctors = () => {
       expertise: ["Stroke Care", "Epilepsy", "Movement Disorders"],
       availableDays: "Wed, Thu, Sat",
       languages: ["English", "Hindi", "Gujarati"],
-      consultationFee: "₹1400",
       rating: 4.8
     },
     {
@@ -90,7 +85,6 @@ const Doctors = () => {
       expertise: ["Endoscopy", "Liver Disease", "IBD Treatment"],
       availableDays: "Tue, Fri, Sat",
       languages: ["English", "Mandarin"],
-      consultationFee: "₹1600",
       rating: 4.6
     }
   ];
@@ -219,10 +213,6 @@ const Doctors = () => {
                     </div>
 
                     <div className="pt-2 border-t">
-                      <div className="flex justify-between items-center mb-3">
-                        <span className="text-sm text-muted-foreground">Consultation Fee:</span>
-                        <span className="font-semibold text-primary">{doctor.consultationFee}</span>
-                      </div>
                       <div className="space-y-2">
                         <Button variant="medical" className="w-full">
                           <Calendar className="w-4 h-4 mr-2" />
