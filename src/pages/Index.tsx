@@ -33,19 +33,19 @@ const Index = () => {
   }];
   const whyChooseUs = [{
     title: "Advanced Technology",
-    description: "Latest medical equipment and cutting-edge treatment methods",
+    description: "Precision & Innovation",
     icon: <Shield className="w-8 h-8 text-teal-500" />
   }, {
     title: "Expert Doctors",
-    description: "Highly qualified specialists with years of experience",
+    description: "Expertise You Can Trust",
     icon: <Users className="w-8 h-8 text-teal-500" />
   }, {
     title: "Patient-First Approach",
-    description: "Compassionate care focused on your comfort and healing",
+    description: "Compassion in Action",
     icon: <Heart className="w-8 h-8 text-teal-500" />
   }, {
     title: "24/7 Emergency Care",
-    description: "Round-the-clock emergency services for critical situations",
+    description: "Ready When You Need Us",
     icon: <Clock className="w-8 h-8 text-teal-500" />
   }];
   const testimonials = [{
