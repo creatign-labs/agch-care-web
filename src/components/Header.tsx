@@ -9,7 +9,6 @@ const Header = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
-    { name: "Centres of Excellence", path: "/specialties" },
     { name: "Find a Doctor", path: "/doctors" },
     { name: "For Patients", path: "/patients" },
     { name: "Contact Us", path: "/contact" },
