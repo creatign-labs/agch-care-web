@@ -54,11 +54,11 @@ const About = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-section">
+      <section className="relative py-16 sm:py-20 bg-gradient-section">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary">About AGCH</h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 text-primary">About AGCH</h1>
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
               Advancing global healthcare standards with compassionate care, 
               cutting-edge technology, and world-class medical expertise
             </p>
@@ -198,25 +198,25 @@ const About = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-16 sm:py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12">Our Core Values</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-accent">Compassion</h3>
-              <p className="opacity-90">Every patient deserves empathy, understanding, and personalized care</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12">Our Core Values</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+            <div className="space-y-3 sm:space-y-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-accent">Compassion</h3>
+              <p className="text-sm sm:text-base opacity-90">Every patient deserves empathy, understanding, and personalized care</p>
             </div>
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-accent">Excellence</h3>
-              <p className="opacity-90">We strive for the highest standards in medical care and service delivery</p>
+            <div className="space-y-3 sm:space-y-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-accent">Excellence</h3>
+              <p className="text-sm sm:text-base opacity-90">We strive for the highest standards in medical care and service delivery</p>
             </div>
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-accent">Innovation</h3>
-              <p className="opacity-90">Embracing cutting-edge technology and treatment methodologies</p>
+            <div className="space-y-3 sm:space-y-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-accent">Innovation</h3>
+              <p className="text-sm sm:text-base opacity-90">Embracing cutting-edge technology and treatment methodologies</p>
             </div>
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-accent">Integrity</h3>
-              <p className="opacity-90">Transparent, ethical practices in all our medical and business operations</p>
+            <div className="space-y-3 sm:space-y-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-accent">Integrity</h3>
+              <p className="text-sm sm:text-base opacity-90">Transparent, ethical practices in all our medical and business operations</p>
             </div>
           </div>
         </div>

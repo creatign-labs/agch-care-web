@@ -43,11 +43,11 @@ const Contact = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-section">
+      <section className="py-16 sm:py-20 bg-gradient-section">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary">Contact Us</h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 text-primary">Contact Us</h1>
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
               We're here to help you with all your healthcare needs. Reach out to us 
               for appointments, inquiries, or emergency services.
             </p>
@@ -243,20 +243,20 @@ const Contact = () => {
       </section>
 
       {/* Emergency CTA */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-16 sm:py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <div className="flex items-center justify-center mb-6">
-            <Ambulance className="w-16 h-16 text-accent mr-4" />
-            <h2 className="text-4xl md:text-5xl font-bold">Medical Emergency?</h2>
+          <div className="flex flex-col sm:flex-row items-center justify-center mb-4 sm:mb-6">
+            <Ambulance className="w-12 h-12 sm:w-16 sm:h-16 text-accent mb-3 sm:mb-0 sm:mr-4" />
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">Medical Emergency?</h2>
           </div>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto">
             Don't wait - call our emergency helpline immediately for urgent medical situations
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="lg" className="text-lg px-8 py-6">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <Button variant="cta" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
               Emergency: 1800-123-AGCH
             </Button>
-            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 border-white bg-transparent text-primary-foreground hover:bg-white hover:text-primary">
+            <Button asChild variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-white bg-transparent text-primary-foreground hover:bg-white hover:text-primary w-full sm:w-auto">
               <a href="tel:+918012342424">Call Now</a>
             </Button>
           </div>

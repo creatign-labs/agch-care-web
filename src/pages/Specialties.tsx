@@ -58,11 +58,11 @@ const Specialties = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-section">
+      <section className="py-16 sm:py-20 bg-gradient-section">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary">Centres of Excellence</h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 text-primary">Centres of Excellence</h1>
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
               Specialized medical departments delivering world-class healthcare across 
               multiple disciplines with expert doctors and advanced technology
             </p>
@@ -115,18 +115,18 @@ const Specialties = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-16 sm:py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Need Specialized Care?</h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Need Specialized Care?</h2>
+          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto">
             Our expert doctors across all specialties are ready to provide you with 
             the best possible care tailored to your specific needs
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="lg" className="text-lg px-8 py-6">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <Button variant="cta" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
               Book Appointment
             </Button>
-            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 border-white bg-transparent text-primary-foreground hover:bg-white hover:text-primary">
+            <Button asChild variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-white bg-transparent text-primary-foreground hover:bg-white hover:text-primary w-full sm:w-auto">
               <Link to="/doctors">Find a Doctor</Link>
             </Button>
           </div>

@@ -19,40 +19,40 @@ const Footer = () => {
 
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 py-8 sm:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Logo & Mission */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-primary font-bold text-lg">A</span>
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-accent rounded-lg flex items-center justify-center">
+                <span className="text-primary font-bold text-base sm:text-lg">A</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold">AGCH</h3>
-                <p className="text-sm opacity-80">Advance Global Care</p>
+                <h3 className="text-lg sm:text-xl font-bold">AGCH</h3>
+                <p className="text-xs sm:text-sm opacity-80">Advance Global Care</p>
               </div>
             </div>
-            <p className="text-sm opacity-80 leading-relaxed">
+            <p className="text-xs sm:text-sm opacity-80 leading-relaxed">
               Your trusted multi-specialty hospital, offering world-class healthcare 
               with advanced cancer care and comprehensive medical services for your family's well-being.
             </p>
-            <div className="flex space-x-4">
-              <Facebook className="w-5 h-5 opacity-80 hover:opacity-100 cursor-pointer transition-opacity" />
-              <Twitter className="w-5 h-5 opacity-80 hover:opacity-100 cursor-pointer transition-opacity" />
-              <Instagram className="w-5 h-5 opacity-80 hover:opacity-100 cursor-pointer transition-opacity" />
-              <Linkedin className="w-5 h-5 opacity-80 hover:opacity-100 cursor-pointer transition-opacity" />
+            <div className="flex space-x-3 sm:space-x-4">
+              <Facebook className="w-4 h-4 sm:w-5 sm:h-5 opacity-80 hover:opacity-100 cursor-pointer transition-opacity" />
+              <Twitter className="w-4 h-4 sm:w-5 sm:h-5 opacity-80 hover:opacity-100 cursor-pointer transition-opacity" />
+              <Instagram className="w-4 h-4 sm:w-5 sm:h-5 opacity-80 hover:opacity-100 cursor-pointer transition-opacity" />
+              <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 opacity-80 hover:opacity-100 cursor-pointer transition-opacity" />
             </div>
           </div>
 
           {/* Our Specialties */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Our Specialties</h4>
-            <ul className="space-y-2">
+            <h4 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Our Specialties</h4>
+            <ul className="space-y-1.5 sm:space-y-2">
               {specialties.map((specialty) => (
                 <li key={specialty}>
                   <Link 
                     to="/specialties" 
-                    className="text-sm opacity-80 hover:opacity-100 hover:text-accent transition-all duration-200"
+                    className="text-xs sm:text-sm opacity-80 hover:opacity-100 hover:text-accent transition-all duration-200"
                   >
                     {specialty}
                   </Link>
@@ -63,17 +63,17 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li><Link to="/" className="text-sm opacity-80 hover:opacity-100 hover:text-accent transition-all duration-200">Home</Link></li>
-              <li><Link to="/about" className="text-sm opacity-80 hover:opacity-100 hover:text-accent transition-all duration-200">About Us</Link></li>
-              <li><Link to="/doctors" className="text-sm opacity-80 hover:opacity-100 hover:text-accent transition-all duration-200">Find a Doctor</Link></li>
-              <li><Link to="/patients" className="text-sm opacity-80 hover:opacity-100 hover:text-accent transition-all duration-200">For Patients</Link></li>
+            <h4 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Quick Links</h4>
+            <ul className="space-y-1.5 sm:space-y-2">
+              <li><Link to="/" className="text-xs sm:text-sm opacity-80 hover:opacity-100 hover:text-accent transition-all duration-200">Home</Link></li>
+              <li><Link to="/about" className="text-xs sm:text-sm opacity-80 hover:opacity-100 hover:text-accent transition-all duration-200">About Us</Link></li>
+              <li><Link to="/doctors" className="text-xs sm:text-sm opacity-80 hover:opacity-100 hover:text-accent transition-all duration-200">Find a Doctor</Link></li>
+              <li><Link to="/patients" className="text-xs sm:text-sm opacity-80 hover:opacity-100 hover:text-accent transition-all duration-200">For Patients</Link></li>
               {quickLinks.map((link) => (
                 <li key={link.path}>
                   <Link 
                     to={link.path} 
-                    className="text-sm opacity-80 hover:opacity-100 hover:text-accent transition-all duration-200"
+                    className="text-xs sm:text-sm opacity-80 hover:opacity-100 hover:text-accent transition-all duration-200"
                   >
                     {link.name}
                   </Link>
@@ -84,30 +84,30 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-            <div className="space-y-3">
-              <div className="flex items-start space-x-3">
-                <MapPin className="w-4 h-4 mt-1 opacity-80" />
-                <div className="text-sm opacity-80">
+            <h4 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Contact Us</h4>
+            <div className="space-y-2 sm:space-y-3">
+              <div className="flex items-start space-x-2 sm:space-x-3">
+                <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 mt-1 opacity-80 flex-shrink-0" />
+                <div className="text-xs sm:text-sm opacity-80">
                   <p>123 Healthcare Avenue</p>
                   <p>Medical District, City 560001</p>
                 </div>
               </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="w-4 h-4 opacity-80" />
-                <span className="text-sm opacity-80">+91 80 1234 5678</span>
+              <div className="flex items-center space-x-2 sm:space-x-3">
+                <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 opacity-80 flex-shrink-0" />
+                <span className="text-xs sm:text-sm opacity-80">+91 80 1234 5678</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="w-4 h-4 opacity-80" />
-                <span className="text-sm opacity-80">info@agch.com</span>
+              <div className="flex items-center space-x-2 sm:space-x-3">
+                <Mail className="w-3.5 h-3.5 sm:w-4 sm:h-4 opacity-80 flex-shrink-0" />
+                <span className="text-xs sm:text-sm opacity-80">info@agch.com</span>
               </div>
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
-          <p className="text-sm opacity-80">
+        <div className="border-t border-primary-foreground/20 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center">
+          <p className="text-xs sm:text-sm opacity-80">
             © 2024 Advance Global Care Hospital. All rights reserved.
           </p>
         </div>

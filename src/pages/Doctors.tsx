@@ -100,11 +100,11 @@ const Doctors = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-section">
+      <section className="py-16 sm:py-20 bg-gradient-section">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary">Find a Doctor</h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 text-primary">Find a Doctor</h1>
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
               Connect with our expert medical professionals who are dedicated to providing 
               exceptional healthcare with compassion and expertise
             </p>
@@ -112,8 +112,8 @@ const Doctors = () => {
 
           {/* Search Section */}
           <div className="max-w-4xl mx-auto">
-            <Card className="p-6 shadow-card">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Card className="p-4 sm:p-6 shadow-card">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
                 <div className="relative">
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
                   <Input
@@ -242,17 +242,17 @@ const Doctors = () => {
       </section>
 
       {/* Emergency Contact */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-16 sm:py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Need Immediate Medical Attention?</h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Need Immediate Medical Attention?</h2>
+          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto">
             Our emergency department is available 24/7 for urgent medical situations
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="lg" className="text-lg px-8 py-6">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <Button variant="cta" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
               Emergency: 1800-123-AGCH
             </Button>
-            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 border-white text-white hover:bg-white hover:text-primary">
+            <Button asChild variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-white text-white hover:bg-white hover:text-primary w-full sm:w-auto">
               <a href="tel:+918012342424">Call Now</a>
             </Button>
           </div>

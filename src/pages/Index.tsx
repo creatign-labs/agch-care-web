@@ -79,19 +79,19 @@ const Index = () => {
         </div>
         
         <div className="container mx-auto px-4 relative z-10 text-center animate-fade-in-up">
-          <h1 className="text-5xl font-bold mb-6 text-white text-center md:text-5xl">India's Premier Cancer Care:
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-white text-center">India's Premier Cancer Care:
 Advanced, Accessible, All for You.<br />
             
           </h1>
-          <p className="text-xl mb-8 text-white/90 max-w-3xl mx-auto text-center md:text-base font-light">Your trusted multi-specialty partner for healing. We deliver world-class, blending advance treatment with compassionate care-making premier healthcare truly within your reach.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button asChild variant="hero" size="lg" className="text-lg px-8 py-6">
+          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/90 max-w-3xl mx-auto text-center font-light px-4">Your trusted multi-specialty partner for healing. We deliver world-class, blending advance treatment with compassionate care-making premier healthcare truly within your reach.</p>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
+            <Button asChild variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
               <Link to="/doctors">
                 Find a Doctor
-                <ArrowRight className="w-5 h-5 ml-2" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 border-white text-foreground hover:bg-white hover:text-primary">
+            <Button asChild variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-white text-foreground hover:bg-white hover:text-primary w-full sm:w-auto">
               <Link to="/specialties">Explore Our Specialties</Link>
             </Button>
           </div>
@@ -101,9 +101,9 @@ Advanced, Accessible, All for You.<br />
       {/* Centres of Excellence */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">Centres of Excellence</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto whitespace-nowrap">Specialized care across multiple medical disciplines with world-class expertise.</p>
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-primary px-4">Centres of Excellence</h2>
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">Specialized care across multiple medical disciplines with world-class expertise.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
@@ -133,9 +133,9 @@ Advanced, Accessible, All for You.<br />
       {/* Why Choose Us */}
       <section className="py-20 bg-gradient-section">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">Why Choose AGCH?</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-primary px-4">Why Choose AGCH?</h2>
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
               Experience the difference with our commitment to excellence in healthcare
             </p>
           </div>
@@ -155,25 +155,25 @@ Advanced, Accessible, All for You.<br />
       {/* Patient Testimonials */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">Patient Stories</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-primary px-4">Patient Stories</h2>
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
               Hear from those whose lives we've touched through compassionate care
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <Card className="p-8 shadow-card">
+          <div className="max-w-4xl mx-auto px-4">
+            <Card className="p-6 sm:p-8 shadow-card">
               <CardContent className="text-center">
                 <div className="flex justify-center mb-4">
-                  {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => <Star key={i} className="w-5 h-5 fill-accent text-accent" />)}
+                  {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-accent text-accent" />)}
                 </div>
-                <blockquote className="text-xl md:text-2xl italic mb-6 text-muted-foreground">
+                <blockquote className="text-lg sm:text-xl md:text-2xl italic mb-4 sm:mb-6 text-muted-foreground px-2">
                   "{testimonials[currentTestimonial].quote}"
                 </blockquote>
                 <div>
-                  <h4 className="text-lg font-semibold text-primary">{testimonials[currentTestimonial].name}</h4>
-                  <p className="text-muted-foreground">{testimonials[currentTestimonial].condition}</p>
+                  <h4 className="text-base sm:text-lg font-semibold text-primary">{testimonials[currentTestimonial].name}</h4>
+                  <p className="text-sm sm:text-base text-muted-foreground">{testimonials[currentTestimonial].condition}</p>
                 </div>
               </CardContent>
             </Card>
@@ -194,14 +194,14 @@ Advanced, Accessible, All for You.<br />
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-16 sm:py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Start Your Healthcare Journey?</h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Ready to Start Your Healthcare Journey?</h2>
+          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto">
             Book an appointment with our expert doctors or explore our comprehensive medical services
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="lg" className="text-lg px-8 py-6">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
+            <Button variant="cta" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
               Book an Appointment
             </Button>
           </div>

@@ -78,13 +78,13 @@ const Oncology = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-section">
+      <section className="py-16 sm:py-20 bg-gradient-section">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-primary px-2">
               Centre of Excellence for <span className="text-teal-600">Cancer Care</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
               Comprehensive cancer treatment with a multidisciplinary approach, 
               combining advanced technology, expert doctors, and compassionate care
             </p>
@@ -240,18 +240,18 @@ const Oncology = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-16 sm:py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Start Your Treatment?</h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Ready to Start Your Treatment?</h2>
+          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 opacity-90 max-w-2xl mx-auto">
             Our oncology team is here to provide you with personalized cancer care 
             and support throughout your journey to recovery
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="lg" className="text-lg px-8 py-6">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <Button variant="cta" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
               Book Oncology Consultation
             </Button>
-            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 border-white text-white hover:bg-white hover:text-primary">
+            <Button asChild variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-white text-white hover:bg-white hover:text-primary w-full sm:w-auto">
               <Link to="/contact">Contact Cancer Center</Link>
             </Button>
           </div>
