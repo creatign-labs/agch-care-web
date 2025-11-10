@@ -8,22 +8,18 @@ const Oncology = () => {
   const subSpecialties = [
     {
       title: "Medical Oncology",
-      description: "Comprehensive cancer treatment using chemotherapy, immunotherapy, and targeted therapies",
       icon: "💊"
     },
     {
-      title: "Surgical Oncology",
-      description: "Expert surgical removal of tumors with minimally invasive techniques",
+      title: "Cancer Screening",
       icon: "🔬"
     },
     {
-      title: "Radiation Oncology",
-      description: "Precision radiation therapy using advanced linear accelerator technology",
+      title: "MRI",
       icon: "⚡"
     },
     {
-      title: "Pediatric Oncology",
-      description: "Specialized cancer care for children with age-appropriate treatments",
+      title: "Chemotherapy",
       icon: "👶"
     }
   ];
@@ -146,8 +142,7 @@ const Oncology = () => {
               <Card key={index} className="text-center group hover:shadow-card transition-all duration-300 hover:-translate-y-2">
                 <CardContent className="p-8">
                   <div className="text-4xl mb-4">{specialty.icon}</div>
-                  <h3 className="text-xl font-semibold mb-4 text-primary">{specialty.title}</h3>
-                  <p className="text-muted-foreground">{specialty.description}</p>
+                  <h3 className="text-xl font-semibold text-primary">{specialty.title}</h3>
                 </CardContent>
               </Card>
             ))}
