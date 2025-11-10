@@ -27,7 +27,7 @@ const Index = () => {
     link: "/specialties"
   }, {
     title: "Neurology & Neurosurgery",
-    description: "Advanced brain and spine treatments",
+    description: "Advanced brain and spine treatments with comprehensive and cutting-edge care",
     icon: "🧠",
     link: "/specialties"
   }];
