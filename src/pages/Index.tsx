@@ -110,7 +110,7 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-            {specialties.map((specialty, index) => <Card key={index} className={`group hover:shadow-card transition-all duration-300 hover:-translate-y-2 ${specialty.featured ? 'md:col-span-2 lg:col-span-2 bg-gradient-card' : ''}`}>
+            {specialties.map((specialty, index) => <Card key={index} className={`group hover:shadow-card transition-all duration-300 hover:-translate-y-2 ${specialty.featured ? 'bg-gradient-card' : ''}`}>
                 <CardContent className="p-6 text-center">
                   <div className="text-4xl mb-4">{specialty.icon}</div>
                   <h3 className="text-xl font-semibold mb-3 text-primary">{specialty.title}</h3>
