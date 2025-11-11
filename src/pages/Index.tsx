@@ -72,7 +72,7 @@ const Index = () => {
   };
   return <div className="w-full">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-section overflow-hidden">
+      <section className="relative min-h-[70vh] md:min-h-screen flex items-center justify-center bg-gradient-section overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img src={hospitalExterior} alt="Modern hospital exterior" className="w-full h-full object-cover opacity-20" />
           <div className="absolute inset-0 bg-gradient-hero opacity-60"></div>
