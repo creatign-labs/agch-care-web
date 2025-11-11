@@ -79,9 +79,7 @@ const Index = () => {
         </div>
         
         <div className="container mx-auto px-4 relative z-10 text-center animate-fade-in-up">
-          <h1 className="sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-accent text-center text-3xl">
-            India's New Standard in Cancer Care.
-          </h1>
+          <h1 className="sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-accent text-center text-3xl">India's Leading Cancer Care</h1>
           <p className="sm:text-2xl md:text-3xl font-semibold mb-6 text-white/95 text-center text-lg">
             Advanced. Accessible. All for You.
           </p>
