@@ -82,6 +82,9 @@ const Index = () => {
           <h1 className="sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-white text-center text-2xl">
             India's New Standard in Cancer Care.
           </h1>
+          <p className="text-xl sm:text-2xl md:text-3xl font-semibold mb-6 text-white/95 text-center">
+            Advanced. Accessible. All for You.
+          </p>
           <p className="sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/90 max-w-3xl mx-auto text-center font-light px-4 text-sm">Trusted multi-specialty care combining advanced treatment, compassion and world-class healthcare within reach.</p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
             <Button asChild variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
