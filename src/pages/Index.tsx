@@ -79,9 +79,8 @@ const Index = () => {
         </div>
         
         <div className="container mx-auto px-4 relative z-10 text-center animate-fade-in-up">
-          <h1 className="sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-white text-center text-2xl">India's Premier Cancer Care:
-Advanced, Accessible, All for You.<br />
-            
+          <h1 className="sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-white text-center text-2xl">
+            India's New Standard in Cancer Care.
           </h1>
           <p className="sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/90 max-w-3xl mx-auto text-center font-light px-4 text-sm">Your trusted multi-specialty partner for healing. We deliver world-class, blending advance treatment with compassionate care-making premier healthcare truly within your reach.</p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
