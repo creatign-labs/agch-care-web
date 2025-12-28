@@ -99,6 +99,15 @@ world-class healthcare within reach.</p>
         </div>
       </section>
 
+      {/* Highlight Banner */}
+      <section className="py-8 bg-accent">
+        <div className="container mx-auto px-4">
+          <p className="text-center text-xl sm:text-2xl md:text-3xl font-bold text-accent-foreground">
+            U.P's largest stand-alone Cancer Centre with 108 beds.
+          </p>
+        </div>
+      </section>
+
       {/* Centres of Excellence */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">

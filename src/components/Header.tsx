@@ -1,7 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Phone, Menu } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Phone, Menu, ChevronDown } from "lucide-react";
 import agchLogo from "@/assets/agch-logo.jpg";
 import { useState } from "react";
 
@@ -15,6 +21,13 @@ const Header = () => {
     { name: "Find a Doctor", path: "/doctors" },
     { name: "For Patients", path: "/patients" },
     { name: "Contact Us", path: "/contact" },
+  ];
+
+  const moreItems = [
+    { name: "Careers", path: "/careers" },
+    { name: "Second Opinion", path: "/second-opinion" },
+    { name: "Blogs", path: "/blogs" },
+    { name: "Our Specialities", path: "/specialties" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -59,6 +72,26 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
+            
+            {/* More Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+                More
+                <ChevronDown className="w-4 h-4 ml-1" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                {moreItems.map((item) => (
+                  <DropdownMenuItem key={item.path} asChild>
+                    <Link
+                      to={item.path}
+                      className={`w-full ${isActive(item.path) ? "text-primary" : ""}`}
+                    >
+                      {item.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </nav>
 
           {/* Desktop CTA Button */}
@@ -87,6 +120,23 @@ const Header = () => {
                     {item.name}
                   </Link>
                 ))}
+                
+                <div className="border-t border-border pt-4">
+                  <p className="text-sm font-semibold text-muted-foreground mb-2">More</p>
+                  {moreItems.map((item) => (
+                    <Link
+                      key={item.path}
+                      to={item.path}
+                      onClick={() => setIsOpen(false)}
+                      className={`block text-lg font-medium transition-colors hover:text-primary py-2 ${
+                        isActive(item.path) ? "text-primary" : "text-muted-foreground"
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+                
                 <Button variant="cta" size="lg" className="w-full mt-4">
                   Book Appointment
                 </Button>
