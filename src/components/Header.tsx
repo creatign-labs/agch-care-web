@@ -45,17 +45,19 @@ const Header = () => {
 
       {/* Main Header */}
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 sm:h-18 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 sm:space-x-3">
+          <Link to="/" className="flex items-center space-x-2 sm:space-x-3 shrink-0">
             <img 
               src={agchLogo} 
-              alt="AGCH Logo" 
-              className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+              alt="AGCH - Advance Global Cancer Hospital Logo" 
+              className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 object-contain rounded-sm"
+              loading="eager"
+              decoding="async"
             />
-            <div>
-              <h1 className="text-lg sm:text-xl font-bold text-primary">AGCH</h1>
-              <p className="text-[10px] sm:text-xs text-muted-foreground">Advance Global Care</p>
+            <div className="flex flex-col justify-center">
+              <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-primary leading-tight">AGCH</h1>
+              <p className="text-[10px] sm:text-xs lg:text-sm text-muted-foreground leading-tight">Advance Global Care</p>
             </div>
           </Link>
 
