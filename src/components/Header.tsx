@@ -92,9 +92,8 @@ const Header = () => {
             </DropdownMenu>
           </nav>
 
-          {/* Desktop CTA Button */}
-          <Button variant="cta" size="lg" className="hidden md:flex shrink-0">
-            Book Appointment
+          <Button asChild variant="cta" size="lg" className="hidden md:flex shrink-0">
+            <Link to="/contact">Book Appointment</Link>
           </Button>
 
           {/* Mobile Menu */}
@@ -135,8 +134,8 @@ const Header = () => {
                   ))}
                 </div>
                 
-                <Button variant="cta" size="lg" className="w-full mt-4">
-                  Book Appointment
+                <Button asChild variant="cta" size="lg" className="w-full mt-4">
+                  <Link to="/contact" onClick={() => setIsOpen(false)}>Book Appointment</Link>
                 </Button>
               </nav>
             </SheetContent>
