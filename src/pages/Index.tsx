@@ -211,8 +211,8 @@ world-class healthcare within reach.</p>
             Book an appointment with our expert doctors or explore our comprehensive medical services
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
-            <Button variant="cta" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
-              Book an Appointment
+            <Button asChild variant="cta" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
+              <Link to="/contact">Book an Appointment</Link>
             </Button>
           </div>
         </div>

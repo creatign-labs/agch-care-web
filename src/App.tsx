@@ -12,6 +12,12 @@ import Oncology from "./pages/Oncology";
 import Doctors from "./pages/Doctors";
 import Patients from "./pages/Patients";
 import Contact from "./pages/Contact";
+import Careers from "./pages/Careers";
+import SecondOpinion from "./pages/SecondOpinion";
+import Blogs from "./pages/Blogs";
+import Media from "./pages/Media";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,6 +39,12 @@ const App = () => (
               <Route path="/doctors" element={<Doctors />} />
               <Route path="/patients" element={<Patients />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/careers" element={<Careers />} />
+              <Route path="/second-opinion" element={<SecondOpinion />} />
+              <Route path="/blogs" element={<Blogs />} />
+              <Route path="/media" element={<Media />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/terms" element={<Terms />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
