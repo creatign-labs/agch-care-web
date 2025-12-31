@@ -8,7 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Phone, Menu, ChevronDown } from "lucide-react";
-import agchLogo from "@/assets/agch-logo.jpg";
+import agchLogo from "@/assets/agch-horizontal-logo.png";
 import { useState } from "react";
 
 const Header = () => {
@@ -47,18 +47,14 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 sm:h-18 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 sm:space-x-3 shrink-0">
+          <Link to="/" className="shrink-0">
             <img 
               src={agchLogo} 
-              alt="AGCH - Advance Global Cancer Hospital Logo" 
-              className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 object-contain rounded-sm"
+              alt="Advance Global Care Hospitals Logo" 
+              className="h-10 sm:h-12 lg:h-14 w-auto object-contain"
               loading="eager"
               decoding="async"
             />
-            <div className="flex flex-col justify-center">
-              <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-primary leading-tight">AGCH</h1>
-              <p className="text-[10px] sm:text-xs lg:text-sm text-muted-foreground leading-tight">Advance Global Care</p>
-            </div>
           </Link>
 
           {/* Desktop Navigation */}
