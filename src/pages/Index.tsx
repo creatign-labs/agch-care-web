@@ -9,6 +9,25 @@ import operatingTheater from "@/assets/operating-theater.jpg";
 import patientConsultation from "@/assets/patient-consultation.jpg";
 import hospitalExterior from "@/assets/hospital-exterior.jpg";
 import testimonialAvatar from "@/assets/testimonial-avatar.jpg";
+import heroDoctors1 from "@/assets/hero-doctors-1.jpg";
+import heroDoctors2 from "@/assets/hero-doctors-2.jpg";
+import heroDoctors3 from "@/assets/hero-doctors-3.jpg";
+import heroDoctors4 from "@/assets/hero-doctors-4.jpg";
+import heroDoctors5 from "@/assets/hero-doctors-5.jpg";
+import heroDoctors6 from "@/assets/hero-doctors-6.jpg";
+import heroDoctors7 from "@/assets/hero-doctors-7.jpg";
+import heroDoctors8 from "@/assets/hero-doctors-8.jpg";
+
+const HERO_OPTIONS = [
+  { src: heroDoctors1, label: "Option 1" },
+  { src: heroDoctors2, label: "Option 2" },
+  { src: heroDoctors3, label: "Option 3" },
+  { src: heroDoctors4, label: "Option 4" },
+  { src: heroDoctors5, label: "Option 5" },
+  { src: heroDoctors6, label: "Option 6" },
+  { src: heroDoctors7, label: "Option 7" },
+  { src: heroDoctors8, label: "Option 8" },
+];
 
 const SectionChip = ({ children }: { children: React.ReactNode }) => (
   <div className="inline-flex items-center gap-2 rounded-full bg-navy-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
@@ -19,6 +38,15 @@ const SectionChip = ({ children }: { children: React.ReactNode }) => (
 
 const Index = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [heroIndex, setHeroIndex] = useState(() => {
+    if (typeof window === "undefined") return 0;
+    const saved = Number(window.localStorage.getItem("agch:heroIndex"));
+    return Number.isFinite(saved) && saved >= 0 && saved < HERO_OPTIONS.length ? saved : 0;
+  });
+  const selectHero = (i: number) => {
+    setHeroIndex(i);
+    try { window.localStorage.setItem("agch:heroIndex", String(i)); } catch { /* ignore */ }
+  };
 
   const stats = [
     { value: "4k+", label: "Verified Doctors" },
@@ -108,7 +136,7 @@ const Index = () => {
               <div className="relative min-h-[420px] lg:min-h-[520px]">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="relative w-full max-w-md aspect-[4/5] rounded-[2rem] overflow-hidden shadow-hero">
-                    <img src={heroDoctor} alt="AGCH lead doctor" className="w-full h-full object-cover" width={1024} height={1280} />
+                    <img src={HERO_OPTIONS[heroIndex].src} alt="AGCH doctors team" className="w-full h-full object-cover transition-opacity duration-300" width={1024} height={1280} />
                   </div>
                 </div>
                 {/* Floating specialty card */}
