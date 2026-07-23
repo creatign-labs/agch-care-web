@@ -20,15 +20,7 @@ const SectionChip = ({ children }: { children: React.ReactNode }) => (
 
 const Index = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
-  const [heroIndex, setHeroIndex] = useState(() => {
-    if (typeof window === "undefined") return 0;
-    const saved = Number(window.localStorage.getItem("agch:heroIndex"));
-    return Number.isFinite(saved) && saved >= 0 && saved < HERO_OPTIONS.length ? saved : 0;
-  });
-  const selectHero = (i: number) => {
-    setHeroIndex(i);
-    try { window.localStorage.setItem("agch:heroIndex", String(i)); } catch { /* ignore */ }
-  };
+
 
   const stats = [
     { value: "4k+", label: "Verified Doctors" },
