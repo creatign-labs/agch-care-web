@@ -110,7 +110,7 @@ const Index = () => {
               <div className="relative min-h-[420px] lg:min-h-[520px]">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="relative w-full max-w-md aspect-[4/5] rounded-[2rem] overflow-hidden shadow-hero">
-                    <img src={HERO_OPTIONS[heroIndex].src} alt="AGCH doctors team" className="w-full h-full object-cover transition-opacity duration-300" width={1024} height={1280} />
+                    <img src={heroDoctors} alt="AGCH doctors team" className="w-full h-full object-cover" width={1024} height={1280} />
                   </div>
                 </div>
                 {/* Floating specialty card */}
@@ -126,33 +126,6 @@ const Index = () => {
                   <p className="text-xs opacity-80">24/7 Helpline</p>
                   <p className="text-lg font-bold">1800-123-AGCH</p>
                 </div>
-              </div>
-            </div>
-
-            {/* Hero image selector */}
-            <div className="mt-8 rounded-2xl bg-background/70 backdrop-blur border border-border p-4">
-              <div className="flex items-center justify-between mb-3">
-                <p className="text-xs font-semibold uppercase tracking-wider text-primary">Hero image · pick one</p>
-                <p className="text-xs text-muted-foreground">Selection saved on this device</p>
-              </div>
-              <div className="flex gap-3 overflow-x-auto pb-1">
-                {HERO_OPTIONS.map((opt, i) => (
-                  <button
-                    key={i}
-                    type="button"
-                    onClick={() => selectHero(i)}
-                    aria-label={`Select ${opt.label}`}
-                    aria-pressed={heroIndex === i}
-                    className={`relative shrink-0 w-20 h-24 sm:w-24 sm:h-28 rounded-xl overflow-hidden border-2 transition ${
-                      heroIndex === i ? "border-accent ring-2 ring-accent/40" : "border-transparent hover:border-primary/40"
-                    }`}
-                  >
-                    <img src={opt.src} alt={opt.label} className="w-full h-full object-cover" loading="lazy" />
-                    <span className="absolute bottom-1 left-1 right-1 text-[10px] font-semibold text-white bg-black/50 rounded px-1 py-0.5 text-center">
-                      {i + 1}
-                    </span>
-                  </button>
-                ))}
               </div>
             </div>
           </div>
