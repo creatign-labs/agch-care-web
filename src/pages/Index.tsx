@@ -9,25 +9,7 @@ import operatingTheater from "@/assets/operating-theater.jpg";
 import patientConsultation from "@/assets/patient-consultation.jpg";
 import hospitalExterior from "@/assets/hospital-exterior.jpg";
 import testimonialAvatar from "@/assets/testimonial-avatar.jpg";
-import heroDoctors1 from "@/assets/hero-doctors-1.jpg";
-import heroDoctors2 from "@/assets/hero-doctors-2.jpg";
-import heroDoctors3 from "@/assets/hero-doctors-3.jpg";
-import heroDoctors4 from "@/assets/hero-doctors-4.jpg";
-import heroDoctors5 from "@/assets/hero-doctors-5.jpg";
-import heroDoctors6 from "@/assets/hero-doctors-6.jpg";
-import heroDoctors7 from "@/assets/hero-doctors-7.jpg";
-import heroDoctors8 from "@/assets/hero-doctors-8.jpg";
-
-const HERO_OPTIONS = [
-  { src: heroDoctors1, label: "Option 1" },
-  { src: heroDoctors2, label: "Option 2" },
-  { src: heroDoctors3, label: "Option 3" },
-  { src: heroDoctors4, label: "Option 4" },
-  { src: heroDoctors5, label: "Option 5" },
-  { src: heroDoctors6, label: "Option 6" },
-  { src: heroDoctors7, label: "Option 7" },
-  { src: heroDoctors8, label: "Option 8" },
-];
+import heroDoctors from "@/assets/hero-doctors-5.jpg";
 
 const SectionChip = ({ children }: { children: React.ReactNode }) => (
   <div className="inline-flex items-center gap-2 rounded-full bg-navy-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
